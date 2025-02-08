@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neko | Фразеология</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" type="image/svg" href="css/favicon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" rel="stylesheet">
+  <script src="../javascript/burger.js" defer=""></script>
+</head>
+<body>
+  <header>
+    <a class="navbar-brand" href="index.html">
+      <div class="logo"></div>
+    </a>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container-fluid"> 
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Главная страница</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="grammar.html">Грамматика</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="leksika.html">Лексика</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="frazeo.html">Фразеология</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <div class="burger-menu">
+    <button class="burger-button" onclick="toggleMenu()">☰</button>
+    <nav id="menu" class="hidden">
+      <a href="index.html">Главная страница</a>
+      <a href="grammar.html">Грамматика</a>
+      <a href="leksika.html">Лексика</a>
+      <a href="frazeo.html">Фразеологизмы</a>
+    </nav>
+  </div>
+  
+
+  <main class="container mt-5">
+    <section class="row mb-5">
+        <div class="col-12 text-center mb-4">
+            <h1>Фразеология и стилистика</h1>
+            <p class="lead">Раскрываем богатство русского языка через мемы</p>
+            <div class="mt-3">
+                <span class="badge bg-primary me-2">Идиомы</span>
+                <span class="badge bg-success me-2">Поговорки</span>
+                <span class="badge bg-info me-2">Стили речи</span>
+                <span class="badge bg-warning">Фразеологизмы</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Интерактивная карта выражений -->
+    <section class="row mb-5">
+        <div class="col-12 mb-4">
+            <div class="card bg-dark text-white">
+                <img src="/api/placeholder/1200/400" class="card-img opacity-50" alt="Карта выражений">
+                <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                    <h2>Карта русских выражений</h2>
+                    <p>Исследуйте богатство русского языка через интерактивную карту мемов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Фразеологизмы -->
+    <section class="row mb-5">
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-primary text-white">
+                    <h2 class="h4 mb-0">Фразеологизмы в мемах</h2>
+                </div>
+                <div class="card-body">
+                    <div class="meme-container position-relative">
+                        <img src="/api/placeholder/400/300" class="img-fluid rounded" alt="Мем про фразеологизмы">
+                        <div class="meme-caption text-center mt-3">
+                            <h5>"Бить баклуши"</h5>
+                            <p>Значение: бездельничать, праздно проводить время</p>
+                            <p class="text-muted">История: от старого ремесла – раскалывать чурбаки для деревянных ложек</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Стилистические приемы -->
+        <div class="col-lg-6 col-md-12 mb-4">
+            <div class="card border-0 shadow-lg">
+                <div class="card-header bg-success text-white">
+                    <h2 class="h4 mb-0">Стилистические приёмы</h2>
+                </div>
+                <div class="card-body">
+                    <div class="meme-container position-relative">
+                        <img src="/api/placeholder/400/300" class="img-fluid rounded" alt="Мем про стилистику">
+                        <div class="meme-caption text-center mt-3">
+                            <h5>"Метафора vs Сравнение"</h5>
+                            <p>Жизнь — театр (метафора)</p>
+                            <p>Жизнь как театр (сравнение)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Стили речи -->
+    <section class="row mb-5">
+        <h2 class="text-center mb-4">Стили речи в меме-формате</h2>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-info">
+                <div class="card-body">
+                    <h5 class="card-title text-info">Разговорный стиль</h5>
+                    <img src="/api/placeholder/400/300" class="img-fluid rounded mb-3" alt="Разговорный стиль">
+                    <p class="card-text">"Че как?" vs "Как дела?"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-warning">
+                <div class="card-body">
+                    <h5 class="card-title text-warning">Книжный стиль</h5>
+                    <img src="/api/placeholder/400/300" class="img-fluid rounded mb-3" alt="Книжный стиль">
+                    <p class="card-text">"Позвольте заметить" vs "Слушай"</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-success">
+                <div class="card-body">
+                    <h5 class="card-title text-success">Научный стиль</h5>
+                    <img src="/api/placeholder/400/300" class="img-fluid rounded mb-3" alt="Научный стиль">
+                    <p class="card-text">"В данном контексте" vs "Тут"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Мем дня -->
+    <section class="row mb-5">
+        <div class="col-12">
+            <div class="card bg-light">
+                <div class="card-body text-center">
+                    <h2 class="mb-4">Мем дня</h2>
+                    <img src="/api/placeholder/600/400" class="img-fluid rounded mb-3" alt="Мем дня">
+                    <h4>"Семь пятниц на неделе"</h4>
+                    <p class="lead">О человеке, который часто меняет свои решения</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<div class="credits text-center mt-3">
+  <p>&copy; 2024 The Sweet Spot | Created by Kuvanich Zhansaya and Kairanbay Arailym |</p>
+</div>
+  <script src="../javascript/sweet.js"></script>
+<script src="../javascript/burger.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
