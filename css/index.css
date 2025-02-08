@@ -156,6 +156,8 @@ main p {
   .logo {
       width: 120px; /* Smaller logo size */
       height: 25px;
+      justify-content: center;
+      background-image: url("../css/logo.svg");
   }
 
   /* Adjust navigation */
@@ -344,8 +346,10 @@ header {
 
 /* Adjust the logo */
 .logo {
+    background-image: url("../css/logo.svg");
     width: 150px; /* Reduce logo size */
-    height: 30px; /* Reduce height */
+    justify-content: center;
+    height: 60px; /* Reduce height */
 }
 
 /* Adjust navigation */
@@ -518,7 +522,9 @@ iframe {
     }
 
     .logo {
+        background-image: url("../css/logo.svg");
         width: 150px; /* Scale down the logo */
+        justify-content: center;
         height: auto; /* Maintain aspect ratio */
     }
 

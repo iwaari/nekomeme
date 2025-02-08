@@ -2,7 +2,7 @@
     --text-light: #432818;
     --background-light: #fefae0;
     --primary-light: #6f1d1b;
-    --secondary-light: # #f18701;
+    --secondary-light: #f18701;
     --third-light: #ffe6a7;
     --accent-light: #9d281b;
 }
@@ -55,7 +55,7 @@ nav a {
     background-repeat: no-repeat;
     background-size: contain;
     height: 100px;
-    width: 200px;
+    width: 300px;
 }
 
 nav {
@@ -80,10 +80,10 @@ nav {
 
 .navbar-nav .nav-link {
     color: #ffffff; 
-    cursor: 
-    pointer;
+    cursor: pointer;
     transition: all 1s ease;
     font-weight: 700; 
+    font-size: 20px;
 }
 .working-hours {
     list-style-type: none; /* Removes bullet points */
@@ -92,6 +92,92 @@ nav {
     text-align: center;
 
 }
+.overlay-card {
+    position: relative;
+    text-align: center;
+    padding: 100px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+.overlay-card p {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.6); /* Затемненный фон */
+    color: #fff; /* Белый текст */
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Белая полупрозрачная рамка */
+    display: inline-block; /* Чтобы рамка была только вокруг текста */
+}
+
+/* Затемняющий слой */
+.overlay-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Затемнение */
+    z-index: 1;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85); /* Чуть темнее для лучшей читаемости */
+    color: white;
+    display: flex;
+    flex-direction: column; /* Размещаем текст в столбец */
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    padding: 20px;
+    text-align: center;
+    font-size: 16px; /* Уменьшил размер шрифта для вместимости */
+    line-height: 1.4; /* Увеличил интервал между строками */
+    overflow: hidden;
+}
+.overlay p {
+    color:#fff;
+}
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* Добавил скролл для длинного текста */
+.overlay p {
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+
+
+/* Уникальные фоны */
+.grammar-bg {
+    background-image: url('../css/meme/grammar.jpg');
+}
+
+.vocabulary-bg {
+    background-image: url('../css/meme/jiza.jpeg');
+}
+
+.phrases-bg {
+    background-image: url('../css/meme/fraz.jpg ');
+}
+
+/* Текст поверх фона */
+.overlay-card .card-body {
+    position: relative;
+    z-index: 2;
+}
+
+
 .list-unstyled {
     text-align: center;
 
