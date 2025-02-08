@@ -101,14 +101,17 @@ nav {
     background-size: cover;
     background-position: center;
 }
+.card-title {
+    font-weight: 700;
+    color: #000;
+}
 .overlay-card p {
     position: relative;
     z-index: 2;
-    background: rgba(0, 0, 0, 0.6); /* Затемненный фон */
-    color: #fff; /* Белый текст */
+    color: #000; /* Белый текст */
     padding: 10px;
     border-radius: 5px;
-    border: 2px solid rgba(255, 255, 255, 0.8); /* Белая полупрозрачная рамка */
+   font-size: 22px;
     display: inline-block; /* Чтобы рамка была только вокруг текста */
 }
 
@@ -160,23 +163,78 @@ nav {
 
 /* Уникальные фоны */
 .grammar-bg {
-    background-image: url('../css/meme/grammar.jpg');
+    background-image: url('../css/meme/home.jpeg');
 }
 
 .vocabulary-bg {
-    background-image: url('../css/meme/jiza.jpeg');
+    background-image: url('../css/meme/home2.jpeg');
 }
 
 .phrases-bg {
-    background-image: url('../css/meme/fraz.jpg ');
+    background-image: url('../css/meme/home3.jpeg ');
 }
 
 /* Текст поверх фона */
 .overlay-card .card-body {
     position: relative;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
     z-index: 2;
 }
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Делаем карточки одинаковой высоты */
+}
+#sobaka {
+    width: 520px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch; /* Выровняет все колонки */
+}
+.card-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Равномерно распределяет содержимое */
+    text-align: center;
+}
+.card-body p {
+  color:#000;
+}
+.card-text {
+    flex-grow: 1; /* Растягивает текст, чтобы он заполнял пространство */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px; /* Минимальная высота текста для выравнивания */
+    padding: 0 10px;
+}
+.card-text1 {
+    flex-grow: 1; /* Растягивает текст, чтобы он заполнял пространство */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px; /* Минимальная высота текста для выравнивания */
+    padding: 0 10px;
+}
+.btn-nav {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    background-color: var(--secondary-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
 
+}
+.btn-nav:hover {
+    background-color: var(--accent-light);
+}
 
 .list-unstyled {
     text-align: center;
@@ -210,14 +268,13 @@ main {
     transition: all 1s ease;
 } 
 
-
-
-figure img {
-    border-radius: 10px;
-    width: auto;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+#hard-meme img {
+    width:auto;
 }
-
+.lead {
+    text-align: center;
+    color: #000;
+}
 main p {
     font-size: 1.2em;
     color: #4a4a4a;
@@ -225,7 +282,9 @@ main p {
     margin: 20px 0;
     text-align: left;
 }
-
+.card-header {
+    background-color: var(--primary-light);
+}
 /* Section Headings */
 main h2, .section-heading {
     font-size: 2em;
@@ -415,12 +474,16 @@ footer h5 {
 .link-item {
     display: flex; /* Flexbox for icon and text alignment */
     align-items: center; /* Center items vertically */
-    background-color: #f8d3d3; /* Light pink background */
+    background-color: var(--primary-light); /* Light pink background */
+    color: #fff;
     padding: 10px; /* Padding for the link */
     margin: 5px 0; /* Margin between links */
     text-decoration: none; /* Remove underline */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s; /* Transition for hover effect */
+}
+.link-item:hover {
+    background-color: var(--accent-light);
 }
 .link-item span {
     font-weight: bold; /* Make text bold */
@@ -779,6 +842,9 @@ background-color: var(--accent-light);
 
 .card img {
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+
 }  
   /* On hover, the card will scale up and add a shadow */
 .card:hover {

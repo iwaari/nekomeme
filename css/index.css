@@ -123,22 +123,7 @@ main p {
       margin: 15px auto;
   }
 
-  /* Adjust the form */
-  form {
-      width: 95%; /* Use almost full screen width */
-      padding: 15px; /* Reduce padding */
-      margin: 15px auto; /* Center the form */
-      border-radius: 6px; /* Adjust border radius */
-  }
 
-  /* Adjust input fields and text areas */
-  .form input[type="text"],
-  .form input[type="email"],
-  .form textarea {
-      font-size: 0.9em; /* Smaller font size */
-      padding: 6px; /* Reduce padding */
-      margin-bottom: 10px; /* Reduce margin */
-  }
 
   /* Adjust labels */
   #order .form label {
