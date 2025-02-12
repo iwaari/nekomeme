@@ -8,6 +8,7 @@
 }
 #page-container {
     opacity: 1;
+    background-color: #fff;
     transition: opacity 0.5s ease;
 }
 body {
@@ -277,7 +278,7 @@ main {
 }
 main p {
     font-size: 1.2em;
-    color: #4a4a4a;
+    color: #000;
     line-height: 1.8;
     margin: 20px 0;
     text-align: left;
@@ -348,46 +349,33 @@ main h5 {
     font-size: 0.9em;
     color: #666;
 }
+.card-par {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  img {
+    border-radius: 5px;
+  }
+  button {
+    background-color: #ff6f61;
+    border: none;
+  }
 
 main p {
     font-size: 1.2em;
-    color: #4a4a4a;
+    color: #000;
     line-height: 1.8;
     margin: 20px 0;
     padding: 10px 40px;
 }
-.btn-success {
-    background-color: #e57373; /* Your custom color */
-    border-color: #fff; /* Border color, if any */
-
+.sponge {
+    width: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
 }
-.custom-btn:hover {
-    background-color: #e5a3a3 ;}
-    .custom-bg-pink {
-        background-color: #e5a3a3; 
-    }
-    
-.carousel-control-prev,
-.carousel-control-next {
-        width: 5%; /* Adjust width for more space */
-    }
-    
-.carousel-item img {
-        height: auto;
-        width: 100%;
-        object-fit: cover; /* Ensure images cover the space without distortion */
-    }
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-        background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='https://www.w3.org/2000/svg' fill='fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
-    }
-.carousel-inner .carousel-item {
-        transition: -webkit-transform 2s ease;
-        transition: -moz-transform 2s ease;
-        transition: -ms-transform 2s ease;
-        transition: transform 2s ease;
-        transition: all 2s ease;
-      }
       
 .social-links {
         background-color: none;
@@ -580,7 +568,7 @@ footer h5 {
     transition: background-color 0.3s ease, color 0.3s ease;
 
 }
-.btn-submit1 {
+.btn-par, .show-rule-btn {
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -593,51 +581,30 @@ footer h5 {
 
 }
 
-.btn-create:hover{
-background-color: var(--accent-dark);
-}
-.btn-submit1:hover,
-.btn-create:hover{
+.btn-par:hover, .show-rule-btn:hover{
 background-color: var(--accent-light);
-}
-.btn-submit {
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-.btn-submit {
-    background-color:#e5a3a3;
-    font-weight: 600;
-    font-size: 18px;
-    color: #fff;
-}
-.btn-submit:hover {
-    background-color: #e57373;
-
+text-decoration: underline;
+color:#fff;
 }
 
-.btn-close-popup {
-    background: transparent; /* Make background transparent */
-    border: none; /* Remove border */
-    color: #000; /* Set color */
-    font-size: 20px; /* Set font size */
-    cursor: pointer; /* Change cursor to pointer */
-    position: absolute; /* Position it absolutely */
-    top: 10px;
-    right: 10px; 
+.rule-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    text-align: left;
+    max-width: 600px;
 }
-
-#newsletter {
-    position: relative; /* Make the form a positioned ancestor */
-    padding: 20px; /* Add padding around the form */
+.meme-image {
+    display: block; /* Делаем изображение блочным элементом */
+    margin: 10px auto; /* Автоматические отступы по бокам */
+    width: 100%; /* Или max-width: 400px; для ограничения размера */
+    max-width: 400px; /* Чтобы картинка не была слишком большой */
+    border-radius: 10px;
 }
 
 
-.btn-submit:hover {
-    background-color: #d89494;
-}
 @keyframes fadeInUp {
     /* from {
         opacity: 0;
@@ -663,63 +630,6 @@ background-color: var(--accent-light);
     display: flex;
     opacity: 1;
 } 
-
-.accordion-section {
-    margin-top: 20px; 
-    padding: 0 20px; 
-}
-  
-.accordion {
-    background-color: #ba7070;
-    color: #ffffff;
-    cursor: pointer;
-    padding: 18px;
-    width: 90%; 
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    margin: 0 auto 10px auto; /* центрирует элемент и добавляет отступ снизу */
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: large;
-}
-  
-.accordion:hover,
-.accordion.active {
-    background-color: #e5a3a3; 
-}
-  
-.panel {
-    padding: 0 18px;
-    background-color: white;
-    width: 90%;
-    margin: 0 auto;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    border-radius: 5px;
-}
-  
-
-.accordion:after {
-    content: '🤍'; 
-    font-size: 13px;
-    float: right;
-    margin-left: 5px;
-}
-
-
-.btn-custom {
-    background-color: #e5a3a3 !important; 
-    color: #ffffff;
-    padding: 15x 30px;
-    border-radius: 16px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
   
 .btn-custom{
     background-color: var(--primary-light) !important; 
@@ -1133,7 +1043,7 @@ h3, h4 {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    color: #e57171;
+    color: var(--primary-light);
 }
   
 #menu {
@@ -1156,6 +1066,10 @@ h3, h4 {
     color: var(--accent-light);
     margin: 10px 0;
     font-size: 18px;
+}
+#menu a:hover {
+    color: var(--secondary-light);
+    text-decoration:underline ;
 }
 
   

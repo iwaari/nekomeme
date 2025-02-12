@@ -13,17 +13,6 @@
     border-radius: 10px; /* Slightly reduce the rounding */
 }
 
-.accordion {
-    width: 100%; /* Make accordions take full width */
-    padding: 14px; /* Reduce padding for a more compact design */
-    font-size: 16px; /* Adjust font size */
-}
-
-#quoteDisplay {
-    font-size: 20px; /* Slightly smaller font size for quotes */
-    margin-bottom: 15px; /* Reduce space below the text */
-}
-
 .content-box {
     padding: 15px; /* Reduce padding */
     font-size: 14px; /* Adjust text size */
@@ -39,49 +28,6 @@
     padding: 6px 18px; /* Compact button padding */
 }
 
-/* Adjust text alignment for smaller screens */
-#greeting, #randomQuoteSection {
-    text-align: left; /* Align text to the left if necessary */
-    font-size: 16px; /* Smaller text size */
-}
-  .accordion, .panel, .card {
-    width: 100%; /* Make elements full width */
-    font-size: 0.9em; /* Reduce font size */
-}
-.form-container {
-    padding: 10px; /* Decrease padding */
-}
-  #nextb, #nextb2, #backb, #backb2, #finish {
-    width: 100%; /* Full width for buttons on smaller screens */
-    font-size: 16px; /* Reduce font size */
-}
-
-#order .form input[type="submit"] {
-    font-size: 0.9em; /* Reduce font size for smaller screens */
-    padding: 8px 16px; /* Adjust padding */
-}
-
-.team {
-    flex-direction: column; /* Stack team members vertically */
-    margin: 20px 0;
-    padding: 20px 0;
-}
-
-.team-member {
-    width: 80%; /* Make team members narrower */
-    text-align: center;
-    margin: 10px auto; /* Center them */
-}
-
-.seasonal-menu {
-    grid-template-columns: 1fr; /* Single column layout */
-    gap: 10px; /* Smaller gap */
-    padding: 20px 10px;
-}
-
-.smenu-item img {
-    height: 200px; /* Reduce image height */
-}
 
 main p {
     font-size: 1em; /* Smaller font size */
@@ -176,42 +122,12 @@ main p {
       max-width: 100%;
       height: 250px; /* Smaller height */
   }
-  #getQuoteButton {
-    background-color: #e5a3a3; /* Keep the same color */
-    color: #ffffff;
-    padding: 8px 20px; /* Reduce padding for smaller screens */
-    border-radius: 12px; /* Slightly smaller border radius */
-    border: none;
-    width: 100%;
-    cursor: pointer;
-    font-size: 14px; /* Reduce font size */
-    text-align: center; /* Center-align text */
-}
+
 
       figure img {
         border-radius: 8px; /* Slightly smaller border-radius for smaller screens */
-        width: 100%;
+        width: 300px;
         box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); /* Reduced box-shadow for smaller screens */
-    }
-      .btn-login, .btn-logout, .btn-profile, .btn-signup1, .btn-logout2 {
-        margin: 0 8px; /* Reduce margin */
-        padding: 8px 16px; /* Compact padding */
-        font-size: 14px; /* Smaller font for buttons */
-    }
-
-    .profile-popup {
-        width: 90%; /* Take full width of screen */
-        height: auto; /* Adjust height automatically */
-        padding: 15px;
-    }
-
-    .profile-popup h1, .profile-popup p {
-        font-size: 16px; /* Smaller font size */
-    }
-
-    .btn-logout2 {
-        width: 100%; /* Make logout button take full width */
-        bottom: 10px; /* Adjust position */
     }
 
     /* .login-box, .signup-box {
@@ -219,20 +135,6 @@ main p {
         padding: 15px;
     } */
 
-    /* Reduce padding in text areas */
-    .light-mode #contact-us p, .dark-mode #contact-us p {
-        font-size: 14px;
-        text-align: left; /* Align text to the left */
-    }
-
-    .light-mode h3, .light-mode h4, .dark-mode h3, .dark-mode h4 {
-        font-size: 18px; /* Smaller font for headings */
-    }
-
-    /* Adjust useful link */
-    .light-mode #useful-link a, .dark-mode #useful-link a {
-        font-size: 18px;
-    }
 }
   @media (max-width: 768px) {
     .burger-menu {
@@ -251,17 +153,11 @@ main p {
       font-size: 15px; /* Moderate font size */
   }
 
-  .light-mode footer {
+  footer {
     padding: 15px 10px;
     font-size: 14px; /* Adjust font size for better readability */
     text-align: center; /* Center-align text for a cleaner look */
 }
-.dark-mode footer {
-    padding: 10px 5px;
-    font-size: 14px; /* Adjust font size */
-    text-align: center;
-}
-
   .popup-box {
     position: relative;
       width: 90%; /* Make the popup box almost full width on smaller screens */
@@ -269,59 +165,13 @@ main p {
       border-radius: 8px; /* Slightly reduce the border radius */
   }
 
-  .form-container {
-      flex-direction: column; /* Ensure form elements stack vertically */
-      text-align: left; /* Align text to the left for better readability */
-  }
-
-  .form-label {
-      font-size: 14px; /* Decrease the label font size */
-  }
-
-  .form-input {
-      font-size: 14px; /* Decrease the input font size */
-      padding: 10px; /* Reduce padding for a better fit */
-  }
-
-  .btn-submit {
-      font-size: 16px; /* Adjust button font size */
-      padding: 10px 15px; /* Adjust button padding */
-      width: 100%; /* Make the button full width */
-  }
-
-  .btn-close-popup2 {
-      font-size: 18px; /* Adjust font size for close button */
-      top: 8px; /* Adjust top position */
-      right: 8px; /* Adjust right position */
-  }
 /* Adjust the main container */
 main {
     padding: 20px;
     margin: 20px auto;
 }
 
-/* Adjust the form */
-form {
-    width: 90%; /* Make the form take up most of the screen width */
-    padding: 20px; /* Reduce padding */
-    margin: 20px auto; /* Center the form */
-    border-radius: 8px; /* Adjust border radius for a more compact look */
-}
 
-/* Adjust input fields and text areas */
-.form input[type="text"],
-.form input[type="email"],
-.form textarea {
-    font-size: 1em; /* Reduce font size */
-    padding: 8px; /* Reduce padding */
-    margin-bottom: 15px; /* Reduce margin */
-}
-
-/* Adjust labels */
-#order .form label {
-    font-size: 1em; /* Reduce label font size */
-    margin-bottom: 5px;
-}
 
 /* Adjust header */
 header {
@@ -349,12 +199,6 @@ nav a {
     margin: 5px 0; /* Adjust margin for links */
 }
 
-/* Adjust buttons */
-.btn-submit {
-    width: 100%; /* Make button full width */
-    padding: 12px; /* Adjust padding */
-    font-size: 1em; /* Adjust font size */
-}
 
 .navbar-toggler-icon {
     width: 30px; /* Adjust the size of the toggler icon */
@@ -365,14 +209,9 @@ nav a {
 main h2,
 .section-heading {
     font-size: 1.5em; /* Reduce font size */
-    margin: 20px 0; /* Adjust margins */
+    margin: 10px; /* Adjust margins */
 }
 
-/* Adjust iframe */
-iframe {
-    max-width: 100%; /* Make iframe responsive */
-    height: 300px; /* Adjust height */
-}
 .navbar-nav {
     display: none; /* Hide normal navbar items on small screens */
   }
@@ -381,60 +220,11 @@ iframe {
     display: block; /* Show burger menu */
   }
 
-  #auth-buttons {
-    display: none; /* Hide login/signup buttons outside burger on small screens */
-  }
-
-  #profile-section {
-    display: none; /* Hide profile button outside burger on small screens */
-  }
-  
-  .profile-popup {
-      width: 80%; /* Make it slightly smaller */
-      height: auto;
-      padding: 20px;
-  }
-
-  .profile-popup h1, .profile-popup p {
-      font-size: 18px; /* Adjust text size for better readability */
-  }
-
-  /* .login-box, .signup-box {
-      width: 90%;
-      padding: 20px;
-  } */
-
-  /* Adjust text sizes for smaller screens */
-  .light-mode #contact-us p, .dark-mode #contact-us p {
-      font-size: 15px;
-      text-align: center; /* Center align text on larger screens */
-  }
-
-  .light-mode h3, .light-mode h4, .dark-mode h3, .dark-mode h4 {
-      font-size: 20px; /* Medium font for headings */
-  }
-
   /* Adjust useful link for medium-sized screens */
   .light-mode #useful-link a, .dark-mode #useful-link a {
       font-size: 18px;
   }
 
-  .btn-logout2 {
-      width: 150px; /* Reduce width */
-      bottom: 20px; /* Keep it positioned at the bottom */
-  }
-    /* .login-box, .signup-box {
-      width: 90%; 
-      padding: 20px 10px; 
-  } */
-  .styled-button {
-      padding: 8px 16px; /* Adjust button size */
-      font-size: 14px; /* Reduce font size */
-  }
-    /* Adjustments for medium screens */
-    .team {
-      flex-direction: column; /* Stack team members vertically */
-  }
   .content-box {
       max-width: 90%; /* Reduce max width */
       margin: 10px auto; /* Less margin */
@@ -453,18 +243,6 @@ iframe {
       padding: 10px 18px; /* Adjust padding */
   }
 
-  .team {
-      flex-direction: column; /* Stack team members vertically */
-      margin: 30px 0;
-      padding: 30px 0;
-      justify-content: center; /* Horizontally center the images */
-      align-items: center; 
-  }
-
-  .team-member {
-      width: 45%; /* Make team members narrower */
-      margin: 15px auto; /* Center them */
-  }
 
   .seasonal-menu {
       grid-template-columns: repeat(2, 1fr); /* Two-column layout */
@@ -479,6 +257,7 @@ iframe {
   main p {
       font-size: 1.1em; /* Slightly larger font size */
       padding: 10px 30px; /* Moderate padding */
+      margin: 10px;
   }
 
   .btn-open-popup img {
@@ -510,7 +289,7 @@ iframe {
         background-image: url("../css/logo.svg");
         width: 150px; /* Scale down the logo */
         justify-content: center;
-        height: auto; /* Maintain aspect ratio */
+        height: 50px; /* Maintain aspect ratio */
     }
 
     nav {
